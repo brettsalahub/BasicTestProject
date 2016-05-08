@@ -20,6 +20,9 @@ root 'welcome#index'
     resources :comments
   end
   
+  resources :cats
+  
+  
   #resources :listenerstats do
   #post 'listenerstats' => 'listenerstats#create', :as => :listenerstats
   #end
