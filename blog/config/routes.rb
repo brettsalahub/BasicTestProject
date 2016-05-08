@@ -19,7 +19,15 @@ root 'welcome#index'
   resources :articles do
     resources :comments
   end
-
+  
+  #resources :listenerstats do
+  #post 'listenerstats' => 'listenerstats#create', :as => :listenerstats
+  #end
+  
+  post 'listenerstats' => 'listenerstats#index', :as => :listenerstats
+  get 'listenerstats' => 'listenerstats#index', :as => :listenerstats_get
+  
+ #get :listenerstats, :as => :listenerstats
 
   # Example resource route with options:
   #   resources :products do
